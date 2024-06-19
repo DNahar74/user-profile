@@ -1,20 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const profileForm = document.getElementById("profile-form");
+    const profileForm = document.getElementById("profileForm");
     const nameInput = document.getElementById("name");
     const emailInput = document.getElementById("email");
     const bioInput = document.getElementById("bio");
     const contactInput = document.getElementById("contact");
     const addressInput = document.getElementById("address");
-    const profilePicInput = document.getElementById("profile-pic-input");
+    const profilePicInput = document.getElementById("profilePicInput");
 
-    const profileName = document.getElementById("profile-name");
-    const profileEmail = document.getElementById("profile-email");
-    const profileBio = document.getElementById("profile-bio");
-    const profileContact = document.getElementById("profile-contact");
-    const profileAddress = document.getElementById("profile-address");
-    const profilePicture = document.getElementById("profile-picture");
+    const profileName = document.getElementById("profileName");
+    const profileEmail = document.getElementById("profileEmail");
+    const profileBio = document.getElementById("profileBio");
+    const profileContact = document.getElementById("profileContact");
+    const profileAddress = document.getElementById("profileAddress");
+    const profilePicture = document.getElementById("profilePicture");
 
-    const darkModeToggle = document.getElementById("dark-mode-toggle");
+    const darkModeToggle = document.getElementById("darkModeToggle");
 
     // Load profile data from local storage if available
     const loadProfile = () => {
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Handle dark mode toggle
     darkModeToggle.addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
+        document.body.classList.toggle("darkMode");
     });
 
     // Initial load
