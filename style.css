@@ -20,6 +20,7 @@ body {
   align-items: center;
   min-width: 320px;
   min-height: 100vh;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 #contentWrapper {
@@ -93,7 +94,7 @@ header {
   justify-self: flex-end;
 }
 
-.editBtn, .moreBtn {
+.editBtn, .moreBtn, .darkModeToggle {
   background-color: #007bff;
   color: #ffffff;
   border: none;
@@ -108,7 +109,7 @@ header {
   text-decoration: none;
 }
 
-.editBtn:hover, .moreBtn:hover {
+.editBtn:hover, .moreBtn:hover, .darkModeToggle:hover {
   background-color: #0056b3;
 }
 
@@ -169,4 +170,65 @@ p {
 
 .readMore:hover {
   color: #0056b3;
+}
+
+/* dark mode styles */
+
+.darkMode {
+  background: #121212;
+}
+
+.darkMode #contentWrapper {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.darkMode header {
+  background: #1e1e1e;
+}
+
+.darkMode .headerDetails h1 {
+  color: #ffffff;
+}
+
+.darkMode .profileImage {
+  border: 2px solid #1e1e1e;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.darkMode .editBtn, .darkMode .moreBtn, .darkMode .darkModeToggle {
+  background-color: #0056b3;
+}
+
+.darkMode .editBtn:hover, .darkMode .moreBtn:hover, .darkMode .darkModeToggle:hover {
+  background-color: #003f7f;
+}
+
+.darkMode main section {
+  background: #2e2e2e;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.05);
+}
+
+.darkMode h2 {
+  color: #ffffff;
+}
+
+.darkMode p {
+  color: #aaaaaa;
+}
+
+.darkMode .contactInfo p, .darkMode .contactInfo a {
+  color: #3399ff;
+}
+
+.darkMode .contactInfo a:hover {
+  color: #66b3ff;
+}
+
+.darkMode .readMore {
+  color: #3399ff;
+}
+
+.darkMode .readMore:hover {
+  color: #66b3ff;
 }
