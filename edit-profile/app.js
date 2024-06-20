@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+    let body = document.querySelector("body");
+
     const profileForm = document.getElementById("profileForm");
     const nameInput = document.getElementById("name");
     const emailInput = document.getElementById("email");
@@ -32,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // Save profile data to local storage
-    const saveProfile = () => {
+    function saveProfile() {
         const profile = {
             name: profileName.textContent,
             email: profileEmail.textContent,
@@ -45,8 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // Handle form submission
-    profileForm.addEventListener("submit", (e) => {
-        e.preventDefault();
+    profileForm.addEventListener("submit", (event) => {
+        event.preventDefault();
 
         profileName.textContent = nameInput.value;
         profileEmail.textContent = emailInput.value;
@@ -69,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Handle dark mode toggle
     darkModeToggle.addEventListener("click", () => {
-        document.body.classList.toggle("darkMode");
+        body.classList.toggle("darkMode");
     });
 
     // Initial load
