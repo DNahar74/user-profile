@@ -67,6 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             saveProfile();
         }
+
+        profileForm.reset();
     });
 
     // Handle dark mode toggle
